@@ -8,6 +8,13 @@ class Description extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Text(text,
+      style: TextStyle(
+        fontSize: 30,
+        fontWeight: FontWeight.bold,
+        color: color,
+
+      )
+    );
   }
 }
