@@ -5,12 +5,14 @@ class TitleComp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("Componente", style: TextStyle(
-      color: Colors.white,
-      fontWeight: FontWeight.bold,
-      fontSize: 30,
-
-      )
+    return Text(
+      "Componente",
+      style: TextStyle(
+        color: Colors.white,
+        fontWeight: FontWeight.bold,
+        fontSize: 30,
+        
+      ),
     );
   }
 }

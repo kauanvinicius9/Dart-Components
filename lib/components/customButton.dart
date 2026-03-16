@@ -1,5 +1,3 @@
-import 'dart:nativewrappers/_internal/vm/lib/ffi_native_type_patch.dart';
-
 import 'package:flutter/material.dart';
 
 class Custombutton extends StatelessWidget {
@@ -12,13 +10,14 @@ class Custombutton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
-        fixedSize: Size(150, 70),
+        fixedSize: Size(150, 50),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
-
       ),
-      onPressed: (){
-      Navigator.push(context,MaterialPageRoute(builder: (context)=> page));
-    }, child: Text(title));
+      onPressed: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => page));
+      },
+      child: Text(title),
+    );
   }
 }

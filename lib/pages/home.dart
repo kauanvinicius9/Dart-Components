@@ -15,12 +15,16 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Description(text: "Descrição", color: const Color.fromARGB(255, 0, 0, 0)),
+            Description(
+              text: "Descrição",
+              color: const Color.fromARGB(255, 0, 0, 0),
+            ),
+
             Custombutton(page: Products(), title: "Produtos"),
 
           ],
-        )
-      )
+        ),
+      ),
     );
   }
 }
